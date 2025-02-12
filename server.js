@@ -60,11 +60,12 @@ app.use("/", doctorRoutes);
 // Define server host and port
 const PORT = process.env.PORT || 4400;
 // const HOST = "192.168.0.106";
-const HOST = "192.168.159.117";
+// const HOST = "192.168.159.117";
 // const HOST = "localhost";
 
 
 // Start the server
-app.listen(PORT, HOST, () => {
-    console.log(`Server running at http://${HOST}:${PORT}`.bold.cyan);
+app.listen(PORT,  () => {
+    // console.log(`Server running at http://${HOST}:${PORT}`.bold.cyan);
+    console.log(`Server running at http:// ${PORT}`.bold.cyan);
 });
